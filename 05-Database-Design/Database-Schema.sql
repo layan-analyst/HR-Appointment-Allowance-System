@@ -1,7 +1,3 @@
--- Fictional portfolio case study | SQLite demonstration schema
--- Based on BRD v1.0 and reviewed use cases; NOT an approved production design.
--- Eligibility, form fields, statuses and evidence requirements remain TBD.
--- Finance handoff/payment are excluded from this baseline.
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE employees (
@@ -67,6 +63,3 @@ CREATE INDEX idx_history_request ON request_history(request_id, occurred_at);
 CREATE INDEX idx_reviews_request ON request_reviews(request_id);
 CREATE INDEX idx_decisions_request ON request_decisions(request_id);
 CREATE INDEX idx_notifications_recipient ON notifications(recipient_user_id);
-
--- Application layer must verify role/ownership and write status + history atomically.
--- Schema alone does not implement RBAC, duplicate detection, or policy eligibility.
