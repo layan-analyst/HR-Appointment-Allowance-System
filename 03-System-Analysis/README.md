@@ -1,1 +1,1 @@
-System requirements, use case diagrams, and interface wireframes for the proposed HR Appointment Allowance System.
+System requirements, use case diagrams for the proposed HR Appointment Allowance System.
